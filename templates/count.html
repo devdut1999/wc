@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>There are {{count}} words in your text!</h1>
+	<a href="{% url 'home' %}">Start Again</a>
+	<h2>Original text:</h2>
+	<h3>{{fulltext}}</h3>
+	
+	<h2>Count of each word:</h2>
+	<!-- <h3>{{worddictionary}}</h3>  -->
+	{% for word,cnt in worddictionary %}
+	<h3>{{word}}<span>:</span>
+	{{cnt}}</h3>
+	<br>
+	{% endfor %}
+</body>
+</html>

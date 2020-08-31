@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Word Count</h1>
+	<form action="{% url 'count' %}">
+		<label for="text">Write something:</label>
+		<br>
+		<br>
+		 <textarea cols="40" rows="10" id="text" name="fulltext"></textarea>
+		<br>
+		<br>
+		<input type="submit" value="Count">
+		
+
+	</form>
+	
+</body>
+</html>
